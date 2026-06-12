@@ -1,4 +1,4 @@
-from pathlib import Path
+﻿from pathlib import Path
 import sys
 
 import joblib
@@ -22,7 +22,6 @@ def load_model(path: Path):
 def predict_intent(text: str) -> None:
     """Predict intent for a single user message."""
     model = load_model(MODEL_PATH)
-
     prediction = model.predict([text])[0]
 
     print("AI Assistant Intent Classifier")
@@ -36,6 +35,7 @@ def predict_intent(text: str) -> None:
 
         print()
         print("Class probabilities:")
+
         ranked = sorted(
             zip(classes, probabilities),
             key=lambda item: item[1],
