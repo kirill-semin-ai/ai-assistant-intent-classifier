@@ -1,0 +1,41 @@
+# Python cache
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+.venv/
+venv/
+env/
+
+# Local environment variables
+
+.env
+.env.local
+
+# Jupyter Notebook checkpoints
+
+.ipynb_checkpoints/
+
+# Trained models and generated artifacts
+
+models/
+*.joblib
+*.pkl
+*.pickle
+
+# Logs
+
+*.log
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+
+.vscode/
+.idea/
